@@ -5,6 +5,7 @@ import Beranda from "./Beranda";
 import TentangKami from "./TentangKami";
 import Kepengurusan from "./Kepengurusan";
 import Kontak from "./Kontak";
+import VisitorTracker from "../../Utils/VisitorTracker";
 
 export default observer(() => {
   const menuHandle = () => {
@@ -28,6 +29,9 @@ export default observer(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
+
+  //Tracking Visitor (proses)
+  //VisitorTracker("/");
 
   const style = {
     page: {
