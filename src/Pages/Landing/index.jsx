@@ -1,6 +1,10 @@
 import React, { useLayoutEffect } from "react";
 import { observer } from "mobx-react-lite";
 import MenuBar from "./MenuBar";
+import Beranda from "./Beranda";
+import TentangKami from "./TentangKami";
+import Kepengurusan from "./Kepengurusan";
+import Kontak from "./Kontak";
 
 export default observer(() => {
   const menuHandle = () => {
@@ -28,6 +32,12 @@ export default observer(() => {
   return (
     <>
       <MenuBar />
+      <div id="beranda" style={{ display: "flex", flexDirection: "column" }}>
+        <Beranda />
+        <TentangKami />
+        <Kepengurusan />
+        <Kontak />
+      </div>
     </>
   );
 });
