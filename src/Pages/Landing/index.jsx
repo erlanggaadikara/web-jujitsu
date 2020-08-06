@@ -29,10 +29,17 @@ export default observer(() => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
+  const style = {
+    page: {
+      display: "flex",
+      flexDirection: "column",
+    },
+  };
+
   return (
     <>
       <MenuBar />
-      <div id="beranda" style={{ display: "flex", flexDirection: "column" }}>
+      <div id="beranda" style={style.page}>
         <Beranda />
         <TentangKami />
         <Kepengurusan />

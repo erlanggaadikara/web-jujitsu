@@ -7,27 +7,34 @@ export default observer(() => {
   //     isCallVisible: false,
   //   });
 
+  const style = {
+    appBar: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+      backgroundColor: "white",
+    },
+    icon: {
+      padding: 10,
+      text: {
+        color: "black",
+      },
+    },
+    menu: {
+      display: "flex",
+      padding: 10,
+    },
+  };
+
   return (
     <>
-      <AppBar
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          backgroundColor: "white",
-        }}
-      >
-        <Button style={{ padding: 10 }} href={"#beranda"}>
-          <Typography style={{ color: "black" }} variant="h6">
+      <AppBar style={style.appBar}>
+        <Button style={style.icon} href={"#beranda"}>
+          <Typography style={style.icon.text} variant="h6">
             Icon Web Jujitsu
           </Typography>
         </Button>
-        <div
-          style={{
-            display: "flex",
-            padding: 10,
-          }}
-        >
+        <div style={style.menu}>
           <Button href={"#beranda"}>Beranda</Button>
           <Button href={"#tentang-kami"}>Tentang Kami</Button>
           <Button href={"#kepengurusan"}>Kepengurusan</Button>
