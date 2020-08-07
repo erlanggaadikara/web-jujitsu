@@ -3,10 +3,12 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './App.css';
 import './w3.css';
-import Img1 from './img/img1.jpeg';
-import Img2 from './img/img2.jpeg'; 
-import Img3 from './img/img3.png';
-
+import Img1 from './img/img1.jpg';
+import Img2 from './img/img2.jpg'; 
+import Img3 from './img/img3.jpg';
+import Img4 from './img/img4.jpg';
+import Img5 from './img/img5.jpg';
+import Img6 from './img/img6.jpg';
 
 export default class ver2 extends React.Component {
   state = {
@@ -16,7 +18,10 @@ export default class ver2 extends React.Component {
     galleryItems: [
         <img src={Img1} class="slideShow"/>,
         <img src={Img2} class="slideShow"/>,
-        <img src={Img3} class="slideShow"/>
+        <img src={Img3} class="slideShow"/>,
+        <img src={Img4} class="slideShow"/>,
+        <img src={Img5} class="slideShow"/>,
+        <img src={Img6} class="slideShow"/>
     ],
   }
  
