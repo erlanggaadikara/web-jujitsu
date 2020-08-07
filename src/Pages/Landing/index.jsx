@@ -37,6 +37,7 @@ export default observer(() => {
     page: {
       display: "flex",
       flexDirection: "column",
+      marginTop: 30,
     },
   };
 
