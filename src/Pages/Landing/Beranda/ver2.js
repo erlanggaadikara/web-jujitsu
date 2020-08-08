@@ -66,7 +66,7 @@ export default class ver2 extends React.Component {
           onResized={this.handleOnSlideChange}
         />
         
-        <div class="mySlides w3-animate-opacity w3-content w3-display-container w3-black w3-center" style={{"top":"-175px", "left":"-100px"}}>
+        <div class="mySlides w3-animate-opacity w3-content w3-display-container w3-black w3-center" style={{"top":"-175px", "left":"-100px", "z-index":"+1" }}>
             <div class="w3-display-left w3-padding w3-hide-small" style={{width:"35%"}}>
             <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
                 <h1 class="w3-xlarge">JUJITSU Honey Badger</h1>
