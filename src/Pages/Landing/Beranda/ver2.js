@@ -56,11 +56,11 @@ export default class ver2 extends React.Component {
           autoPlay={true}
           autoPlayInterval={1500}
           fadeOutAnimation={true}
-          slideToIndex={currentIndex}
-          responsive={responsive}
           dotsDisabled={true}
           buttonsDisabled={true}
           mouseTrackingEnabled={true}
+          slideToIndex={currentIndex}
+          responsive={responsive}
           onInitialized={this.handleOnSlideChange}
           onSlideChanged={this.handleOnSlideChange}
           onResized={this.handleOnSlideChange}
