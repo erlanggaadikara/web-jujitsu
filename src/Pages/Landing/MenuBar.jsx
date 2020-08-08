@@ -3,9 +3,9 @@ import { observer, useObservable } from "mobx-react-lite";
 import { Button, AppBar, Typography } from "@material-ui/core";
 
 export default observer(() => {
-  //   const meta = useObservable({
-  //     isCallVisible: false,
-  //   });
+  const meta = useObservable({
+    isCallVisible: false,
+  });
 
   const style = {
     appBar: {
