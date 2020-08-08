@@ -1,6 +1,7 @@
 import React from "react";
 import { observer, useObservable } from "mobx-react-lite";
 import { Button, AppBar, Typography } from "@material-ui/core";
+import Logo from "./logo.png";
 
 export default observer(() => {
   const meta = useObservable({
@@ -31,7 +32,7 @@ export default observer(() => {
       <AppBar style={style.appBar}>
         <Button style={style.icon} href={"#beranda"}>
           <Typography style={style.icon.text} variant="h6">
-            Icon Web Jujitsu
+            <img src={Logo} style={{width :51, height:51}}/>
           </Typography>
         </Button>
         <div style={style.menu}>
