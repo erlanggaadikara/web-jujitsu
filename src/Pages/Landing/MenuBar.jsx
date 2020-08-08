@@ -4,9 +4,9 @@ import { Button, AppBar, Typography } from "@material-ui/core";
 import Logo from "./logo.png";
 
 export default observer(() => {
-  //   const meta = useObservable({
-  //     isCallVisible: false,
-  //   });
+  const meta = useObservable({
+    isCallVisible: false,
+  });
 
   const style = {
     appBar: {
