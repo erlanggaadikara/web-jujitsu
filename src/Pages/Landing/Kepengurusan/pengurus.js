@@ -1,6 +1,6 @@
 import React from 'react';
 import "./w3.css";
-import akbar from "./img/akbar.jpeg";
+import akbar from "./img/akbar2.jpeg";
 import nasir from "./img/nasir.jpg";
 
 export default function pengurus(){
@@ -11,55 +11,55 @@ export default function pengurus(){
       <h1 class="w3-xxxlarge w3-text-red"><b>The Badgers</b></h1>
       </div>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-          <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+          <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
             <caption><h3 class="w3-xlarge"><b>Ketua Umum Honey Badger</b></h3></caption>
               <tr>
-                <th colSpan="3"><img src={nasir} class="w3-image w3-hide-small" width="335" height="471"/></th>
+                <th colSpan="3"><img src={akbar} class="w3-image w3-hide-small" style={{width:"335px",height:"471px"}}/></th>
               </tr>
               <tr>
-                <th class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
+                <th class="w3-left-align" style={{paddingLeft:"50px"}}>Nama</th>
                 <th>:</th>
                 <td>Mohammad Akbar Hakiki</td>
               </tr>
               <tr>
-                <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
+                <th class="w3-left-align" style={{paddingLeft:"50px"}}>Fakultas</th>
                 <th>:</th>
                 <td>Fakultas Ekonomi & Bisnis</td>
               </tr>
               <tr>
-                <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
+                <th class="w3-left-align" style={{paddingLeft:"50px"}}>Prodi</th>
                 <th>:</th>
                 <td>Akuntansi</td>
               </tr>
               <tr>
-                <th class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
+                <th class="w3-left-align" style={{paddingLeft:"50px"}}>NPM</th>
                 <th>:</th>
                 <td>17013010100</td>
               </tr>
           </table>
 
-        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
           <caption><h3 class="w3-xlarge"><b>Wakil Ketua Umum</b></h3></caption>
           <tr>
-              <th colSpan="3"><img src={nasir} class="w3-image w3-hide-small" width="335" height="471"/></th>
+              <th colSpan="3"><img src={nasir} class="w3-image w3-hide-small" style={{width:"335px",height:"471px"}}/></th>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Nama</th>
               <th>:</th>
               <td>Muhammad Nashir Hasan</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Fakultas</th>
               <th>:</th>
               <td>Fakultas Ekonomi & Bisnis</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Prodi</th>
               <th>:</th>
               <td>Manajemen</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>NPM</th>
               <th>:</th>
               <td>1912010183</td>
             </tr>
@@ -67,49 +67,49 @@ export default function pengurus(){
         </div>
 
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
           <caption><h3 class="w3-xlarge"><b>Sektretaris 1</b></h3></caption>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Nama</th>
               <th>:</th>
               <td>Niko Kurniawan</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Fakultas</th>
               <th>:</th>
               <td>Fakultas Ilmu Soisal & Politik</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Prodi</th>
               <th>:</th>
               <td>Ilmu Komunikasi</td>
             </tr>
             <tr>
-              <th  class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
+              <th  class="w3-left-align" style={{paddingLeft:"50px"}}>NPM</th>
               <th>:</th>
               <td>18043010008</td>
             </tr>
         </table>
 
-        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
         <caption><h3 class="w3-xlarge"><b>Sektretaris 2</b></h3></caption>
             <tr>
-              <th  class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
+              <th  class="w3-left-align" style={{paddingLeft:"50px"}}>Nama</th>
               <th>:</th>
               <td>Nur Fajri Nishfi Sya'baniyah</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Fakultas</th>
               <th>:</th>
               <td>Fakultas Teknik</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>Prodi</th>
               <th>:</th>
               <td>Teknik Lingkungan</td>
             </tr>
             <tr>
-              <th class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
+              <th class="w3-left-align" style={{paddingLeft:"50px"}}>NPM</th>
               <th>:</th>
               <td>18034010029</td>
             </tr>
@@ -117,7 +117,7 @@ export default function pengurus(){
         </div>
 
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
             <caption><h3 class="w3-xlarge"><b>Bendahara 1</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
@@ -141,7 +141,7 @@ export default function pengurus(){
             </tr>
         </table>
 
-        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
             <caption><h3 class="w3-xlarge"><b>Bendahara 2</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
