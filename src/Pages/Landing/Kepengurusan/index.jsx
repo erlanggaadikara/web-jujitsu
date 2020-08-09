@@ -9,5 +9,4 @@ export default observer(() => {
       <Pengurus />
     </div>
   )
-  
 });

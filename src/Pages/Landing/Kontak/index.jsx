@@ -1,10 +1,14 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
 import "./w3.css";
+import Instagram from './instagram_feed.js';
 
 export default observer(() => {
   return (
     <div id="kontak">
+      <div class="w3-gray w3-center w3-padding-64">
+        <Instagram />
+      </div>
       <footer class="w3-container w3-padding-24 w3-light-grey w3-center w3-xlarge">
       <h4>Follow Us</h4>
       <div class="w3-section">
