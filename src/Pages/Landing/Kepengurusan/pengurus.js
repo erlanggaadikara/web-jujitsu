@@ -3,12 +3,12 @@ import "./w3.css";
 import akbar from "./img/akbar.jpeg";
 import nasir from "./img/nasir.jpg";
 
-export default function prototype(){
+export default function pengurus(){
     return (
         <div>
         <div class="w3-card-1" class="w3-center">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Kepengurusan UKM Ju-Jitsu Honey Badger </b></h1>
-      <h1 class="w3-xxxlarge w3-text-red"><b>UPN "Veteran" Jawa Timur</b></h1>
+      <h1 class="w3-jumbo"><b>Our Management Team</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>The Badgers</b></h1>
       </div>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
           <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">

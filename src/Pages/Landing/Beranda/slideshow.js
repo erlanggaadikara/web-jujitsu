@@ -10,7 +10,7 @@ import Img4 from './img/img4.jpg';
 import Img5 from './img/img5.jpg';
 import Img6 from './img/img6.jpg';
 
-export default class ver2 extends React.Component {
+export default class slideshow extends React.Component {
   state = {
     currentIndex: 0,
     itemsInSlide: 1,
@@ -71,7 +71,7 @@ export default class ver2 extends React.Component {
             <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
                 <h1 class="w3-xlarge">JUJITSU Honey Badger</h1>
                 <hr class="w3-opacity"></hr>
-                <p>Super simple installment: free of charge</p>
+                <p style={{"font-size":"17px"}}>Bukan sekedar latihan jujitsu biasa!!</p>
                 <p><button class="w3-button w3-block w3-yellow w3-round" onClick={this.slideNextPage}> View Activity </button></p>
             </div>
             </div>
