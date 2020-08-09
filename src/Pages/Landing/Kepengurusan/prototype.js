@@ -1,54 +1,65 @@
 import React from 'react';
 import "./w3.css";
+import akbar from "./img/akbar.jpeg";
+import nasir from "./img/nasir.jpg";
 
 export default function prototype(){
     return (
         <div>
-        <div class="w3-card-1" class="w3-center w3-padding-large"><h1>Kepengurusan Ju-Jitsu UPN "Veteran" Jatim (Honey Badger)</h1></div>
+        <div class="w3-card-1" class="w3-center">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Kepengurusan UKM Ju-Jitsu Honey Badger </b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>UPN "Veteran" Jawa Timur</b></h1>
+      </div>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Ketua Umum</h3></th>
-            <tr>
-              <th class="w3-left-align">Nama</th>
-              <th>:</th>
-              <td>Mohammad Akbar Hakiki</td>
-            </tr>
-            <tr>
-              <th class="w3-left-align">Fakultas</th>
-              <th>:</th>
-              <td>Fakultas Ekonomi & Bisnis</td>
-            </tr>
-            <tr>
-              <th class="w3-left-align">Prodi</th>
-              <th>:</th>
-              <td>Akuntansi</td>
-            </tr>
-            <tr>
-              <th class="w3-left-align"class="w3-left-align">NPM</th>
-              <th>:</th>
-              <td>17013010100</td>
-            </tr>
-        </table>
+          <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+            <caption><h3 class="w3-xlarge"><b>Ketua Umum Honey Badger</b></h3></caption>
+              <tr>
+                <th colSpan="3"><img src={nasir} class="w3-image w3-hide-small" width="335" height="471"/></th>
+              </tr>
+              <tr>
+                <th class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
+                <th>:</th>
+                <td>Mohammad Akbar Hakiki</td>
+              </tr>
+              <tr>
+                <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
+                <th>:</th>
+                <td>Fakultas Ekonomi & Bisnis</td>
+              </tr>
+              <tr>
+                <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
+                <th>:</th>
+                <td>Akuntansi</td>
+              </tr>
+              <tr>
+                <th class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
+                <th>:</th>
+                <td>17013010100</td>
+              </tr>
+          </table>
 
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Wakil Ketua</h3></th>
-            <tr class="w3-left-align">
-              <th>Nama</th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+          <caption><h3 class="w3-xlarge"><b>Wakil Ketua Umum</b></h3></caption>
+          <tr>
+              <th colSpan="3"><img src={nasir} class="w3-image w3-hide-small" width="335" height="471"/></th>
+            </tr>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
               <th>:</th>
               <td>Muhammad Nashir Hasan</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>Fakultas</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
               <th>:</th>
               <td>Fakultas Ekonomi & Bisnis</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>Prodi</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
               <th>:</th>
               <td>Manajemen</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>NPM</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
               <th>:</th>
               <td>1912010183</td>
             </tr>
@@ -56,49 +67,49 @@ export default function prototype(){
         </div>
 
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Sektretaris 1</h3></th>
-            <tr class="w3-left-align">
-              <th>Nama</th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+          <caption><h3 class="w3-xlarge"><b>Sektretaris 1</b></h3></caption>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
               <th>:</th>
               <td>Niko Kurniawan</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>Fakultas</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
               <th>:</th>
-              <td>Fakultas Ilmu Sosial & Ilmu Politik</td>
+              <td>Fakultas Ilmu Soisal & Politik</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>Prodi</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
               <th>:</th>
               <td>Ilmu Komunikasi</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>NPM</th>
+            <tr>
+              <th  class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
               <th>:</th>
               <td>18043010008</td>
             </tr>
         </table>
 
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Sekretaris 2</h3></th>
-            <tr class="w3-left-align">
-              <th>Nama</th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+        <caption><h3 class="w3-xlarge"><b>Sektretaris 2</b></h3></caption>
+            <tr>
+              <th  class="w3-left-align" style={{paddingLeft:"70px"}}>Nama</th>
               <th>:</th>
               <td>Nur Fajri Nishfi Sya'baniyah</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>Fakultas</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Fakultas</th>
               <th>:</th>
               <td>Fakultas Teknik</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>Prodi</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>Prodi</th>
               <th>:</th>
               <td>Teknik Lingkungan</td>
             </tr>
-            <tr class="w3-left-align">
-              <th>NPM</th>
+            <tr>
+              <th class="w3-left-align" style={{paddingLeft:"70px"}}>NPM</th>
               <th>:</th>
               <td>18034010029</td>
             </tr>
@@ -106,8 +117,8 @@ export default function prototype(){
         </div>
 
         <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Bendahara 1</h3></th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+            <caption><h3 class="w3-xlarge"><b>Bendahara 1</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
               <th>:</th>
@@ -130,8 +141,8 @@ export default function prototype(){
             </tr>
         </table>
 
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Bendahara 2</h3></th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"500px"}} class="w3-card-4">
+            <caption><h3 class="w3-xlarge"><b>Bendahara 2</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
               <th>:</th>
@@ -140,9 +151,9 @@ export default function prototype(){
         </table>
         </div>
 
-        <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Div Pengembangan atlet</h3></th>
+        <div style={{padding:"10px", display:"flex",flexDirection:"row",justifyContent:"center"}}>
+        <table style={{backgroundColor:"#f1f1f1",padding:"10px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"400px"}} class="w3-card-4">
+            <caption><h3 class="w3-xlarge"><b>Div Pengembangan atlet</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
               <th>:</th>
@@ -165,8 +176,8 @@ export default function prototype(){
             </tr>
         </table>
 
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Div Humas</h3></th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"10px",borderRadius:"5px",marginTop:"20px",marginRight:"20px",width:"400px"}} class="w3-card-4">
+            <caption><h3 class="w3-xlarge"><b>Div Humas</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
               <th>:</th>
@@ -174,8 +185,8 @@ export default function prototype(){
             </tr>
         </table>
 
-        <table style={{padding:"20px",borderRadius:"5px",marginTop:"20px"}} class="w3-card-4">
-            <th><h3>Div Perlengkapan</h3></th>
+        <table style={{backgroundColor:"#f1f1f1",padding:"10px",borderRadius:"5px",marginTop:"20px",width:"400px"}} class="w3-card-4">
+            <caption><h3 class="w3-xlarge"><b>Div Perlengkapan</b></h3></caption>
             <tr class="w3-left-align">
               <th>Nama</th>
               <th>:</th>
