@@ -72,7 +72,7 @@ export default class ver2 extends React.Component {
                 <h1 class="w3-xlarge">JUJITSU Honey Badger</h1>
                 <hr class="w3-opacity"></hr>
                 <p>Super simple installment: free of charge</p>
-                <p><button class="w3-button w3-block w3-yellow w3-round" onClick={this.slideNextPage}> View Activity <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+                <p><button class="w3-button w3-block w3-yellow w3-round" onClick={this.slideNextPage}> View Activity </button></p>
             </div>
             </div>
         </div>
