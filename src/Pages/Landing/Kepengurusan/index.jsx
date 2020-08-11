@@ -5,7 +5,7 @@ import Pengurus from './pengurus.js';
 
 export default observer(() => {
   return (
-    <div id="kepengurusan" class="w3-padding-64" style={{top:"20px",backgroundColor:"#fff"}}>
+    <div id="kepengurusan" class="w3-padding-64" style={{top:"20px",backgroundColor:"#fff",float:"left"}}>
       <Pengurus />
     </div>
   )
