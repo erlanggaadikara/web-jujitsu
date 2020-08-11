@@ -5,7 +5,7 @@ import Img2 from "./img/img2.jpeg";
 
 export default observer(() => {
   return (
-      <div id="tentang-kami" style={{top:"200px"}}>
+      <div id="tentang-kami">
         <div class="w3-padding-64 w3-black">
           <div class="w3-row-padding">
             <div class="w3-col l8 m6">
@@ -18,12 +18,11 @@ export default observer(() => {
             <div class="w3-col l4 m6">
               <img src={Img2} class="w3-image w3-right w3-hide-small" width="335" height="471"/>
               <div class="w3-center w3-hide-large w3-hide-medium">
-                <img src={Img2} class="w3-image w3-margin-top" width="335" height="471"/>
+                <img src={Img2} class="w3-image w3-margin-top" width="446" height="582"/>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
   )
 });

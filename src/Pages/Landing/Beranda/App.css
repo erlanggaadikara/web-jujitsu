@@ -37,12 +37,13 @@
   }
 }
 .alice-carousel ul li img{
-  height: 750px;
+  min-width: 650px;
+  height : 1000px;
   width: 100%;
   object-fit: cover;
 }
-.slideShow {
-    height: 1000px;
-    width: 100%;
-    object-fit: cover;
+.alice-carousel-mob ul li img {
+  width: 69.99999%;
+  object-fit: cover;
 }
+
