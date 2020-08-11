@@ -5,14 +5,14 @@ import nasir from "./img/nasir.jpg";
 
 export default function pengurus(){
     return (
-        <div class="w3-padding-64">
+        <div class="w3-container w3-padding-64" style={{padding:"128px 16px"}}>
         <div class="w3-card-1" class="w3-center">
-          <h1 class="w3-jumbo"><b>Our Management Team</b></h1>
-          <h1 class="w3-xxxlarge w3-text-red"><b>The Badgers</b></h1>
+          <h1 class="w3-xxlarge"><b>The Badgers</b></h1>
+          <h2 class="w3-xlarge w3-text-red">Daily Management Team</h2>
           </div>
             <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
-                <caption><h3 class="w3-xlarge"><b>Ketua Umum Honey Badger</b></h3></caption>
+              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"10px 10px",width:"410px"}} class="w3-card-4">
+                <caption><h3 class="w3-xlarge"><b>Ketua Umum</b></h3></caption>
                   <tr>
                     <th colSpan="3"><img src={akbar} class="w3-image w3-hide-small" style={{width:"335px",height:"471px"}}/></th>
                   </tr>
@@ -38,7 +38,7 @@ export default function pengurus(){
                   </tr>
               </table>
 
-              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
+              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"10px 10px",width:"410px"}} class="w3-card-4">
                 <caption><h3 class="w3-xlarge"><b>Wakil Ketua Umum</b></h3></caption>
                   <tr>
                     <th colSpan="3"><img src={nasir} class="w3-image w3-hide-small" style={{width:"335px",height:"471px"}}/></th>
@@ -67,7 +67,7 @@ export default function pengurus(){
             </div>
 
             <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
+              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"10px 10px",width:"410px"}} class="w3-card-4">
                 <caption><h3 class="w3-xlarge"><b>Sektretaris 1</b></h3></caption>
                   <tr>
                     <th colSpan="3"><img src="" alt=""/></th>
@@ -94,7 +94,7 @@ export default function pengurus(){
                   </tr>
               </table>
 
-              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
+              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"10px 10px",width:"410px"}} class="w3-card-4">
                 <caption><h3 class="w3-xlarge"><b>Sektretaris 2</b></h3></caption>
                   <tr>
                     <th colSpan="3"><img src="" alt=""/></th>
@@ -123,7 +123,7 @@ export default function pengurus(){
             </div>
 
             <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
-              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
+              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"10px 10px",width:"410px"}} class="w3-card-4">
                 <caption><h3 class="w3-xlarge"><b>Bendahara 1</b></h3></caption>
                   <tr>
                     <th colSpan="3"><img src="" alt=""/></th>
@@ -150,7 +150,7 @@ export default function pengurus(){
                   </tr>
               </table>
 
-              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"20px 50px",width:"410px"}} class="w3-card-4">
+              <table style={{backgroundColor:"#f1f1f1",padding:"20px",borderRadius:"5px",margin:"10px 10px",width:"410px"}} class="w3-card-4">
                 <caption><h3 class="w3-xlarge"><b>Bendahara 2</b></h3></caption>
                   <tr>
                     <th colSpan="3"><img src="" alt=""/></th>
