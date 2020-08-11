@@ -155,10 +155,25 @@ export default function pengurus(){
                   <tr>
                     <th colSpan="3"><img src="" alt=""/></th>
                   </tr>
-                  <tr class="w3-left-align">
-                    <th>Nama</th>
+                  <tr>
+                    <th  class="w3-left-align" style={{paddingLeft:"50px"}}>Nama</th>
                     <th>:</th>
-                    <td>@Adiesabta</td>
+                    <td>Addie Sabta I.</td>
+                  </tr>
+                  <tr>
+                    <th class="w3-left-align" style={{paddingLeft:"50px"}}>Fakultas</th>
+                    <th>:</th>
+                    <td>Fakultas Ekonomi & Bisnis</td>
+                  </tr>
+                  <tr>
+                    <th class="w3-left-align" style={{paddingLeft:"50px"}}>Prodi</th>
+                    <th>:</th>
+                    <td>Ekonomi Pembangunan</td>
+                  </tr>
+                  <tr>
+                    <th class="w3-left-align" style={{paddingLeft:"50px"}}>NPM</th>
+                    <th>:</th>
+                    <td>18011010138</td>
                   </tr>
               </table>
             </div>
