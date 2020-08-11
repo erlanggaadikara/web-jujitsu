@@ -38,7 +38,7 @@
 }
 .alice-carousel ul li img{
   min-width: 650px;
-  height : 1000px;
+  min-height : 800px;
   width: 100%;
   object-fit: cover;
 }
