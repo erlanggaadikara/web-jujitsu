@@ -4,6 +4,7 @@ import akbar from "./img/akbar2.jpg";
 import nasir from "./img/nasir.jpg";
 import nisfi from "./img/nisfi.jpg";
 import alifio from "./img/alifio.jpg";
+import jefri from "./img/jefri2.png";
 
 export default function pengurus(){
     return (
@@ -238,7 +239,7 @@ export default function pengurus(){
               <table style={{backgroundColor:"#f1f1f1",padding:"10px",borderRadius:"5px",marginTop:"20px",width:"400px"}} class="w3-card-4">
                 <caption><h3 class="w3-xlarge"><b>Div Perlengkapan</b></h3></caption>
                   <tr>
-                    <th colSpan="3"><img src="" alt=""/></th>
+                    <th colSpan="3"><img src={jefri} class="w3-image w3-hide-small" style={{width:"335px",height:"471px"}}/></th>
                   </tr>
                   <tr class="w3-left-align">
                     <th>Nama</th>
