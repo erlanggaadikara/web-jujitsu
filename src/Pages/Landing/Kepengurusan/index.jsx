@@ -9,7 +9,7 @@ export default observer(() => {
     <div id="kepengurusan"  style={{top:"0px",backgroundColor:"#fff"}}>
       <Pelatih />
       <Pengurus />
-
     </div>
+    
   )
 });

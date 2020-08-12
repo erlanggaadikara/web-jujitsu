@@ -13,7 +13,5 @@ export default function instagram_feed(){
                 <InstagramEmbed url="https://www.instagram.com/p/B5RmyKFlxOo/" hideCaption={true} style={{margin:"10px 10px"}}/>
             </div>
         </div>
-        
-        
     )
 }
