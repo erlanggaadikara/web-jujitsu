@@ -6,11 +6,10 @@ import Pelatih from "./pelatih.js";
 
 export default observer(() => {
   return (
-    <div id="kepengurusan" class="w3-padding-64" style={{top:"20px",backgroundColor:"#fff",float:"left"}}>
     <div id="kepengurusan"  style={{top:"0px",backgroundColor:"#fff"}}>
       <Pelatih />
       <Pengurus />
     </div>
-    </div>
+    
   )
 });
