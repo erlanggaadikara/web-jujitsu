@@ -6,7 +6,7 @@ import Pelatih from "./pelatih.js";
 
 export default observer(() => {
   return (
-    <div id="kepengurusan"  style={{top:"0px",backgroundColor:"#fff"}}>
+    <div id="kepengurusan"  style={{backgroundColor:"#f1f1f1"}}>
       <Pelatih />
       <Pengurus />
     </div>

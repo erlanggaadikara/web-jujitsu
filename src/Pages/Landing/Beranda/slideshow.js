@@ -16,7 +16,7 @@ export default class slideshow extends React.Component {
   state = {
     currentIndex: 0,
     itemsInSlide: 1,
-    responsive: { 3: { items: 0 } },
+    responsive: { 0: { items: 1 } },
     galleryItems: [
         <img src={Img1} class="slideShow"/>,
         <img src={Img2} class="slideShow"/>,
@@ -61,7 +61,7 @@ export default class slideshow extends React.Component {
           fadeOutAnimation={true}
           dotsDisabled={true}
           buttonsDisabled={true}
-          mouseTrackingEnabled={true}
+          mouseTrackingEnabled={false}
           slideToIndex={currentIndex}
           responsive={responsive}
           onInitialized={this.handleOnSlideChange}
