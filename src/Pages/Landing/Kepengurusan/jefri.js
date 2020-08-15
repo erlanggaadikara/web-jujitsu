@@ -1,6 +1,6 @@
 import React from 'react';
 import "./w3.css";
-import foto from "./img/test.jpg";
+import foto from "./img/jefri.png";
 
 export default function jefri(){
     return(
