@@ -6,7 +6,7 @@ import Instagram from './instagram_feed.js';
 export default observer(() => {
   return (
     <div id="kontak">
-      <div class="w3-gray w3-center w3-padding-64">
+      <div class="w3-white w3-center w3-padding-64">
         <Instagram />
       </div>
       <footer class="w3-container w3-padding-24 w3-light-grey w3-center w3-xlarge">
@@ -19,7 +19,6 @@ export default observer(() => {
         <i class="fa fa-twitter w3-hover-opacity" style={{padding:"5px"}}> </i>
         <i class="fa fa-linkedin w3-hover-opacity" style={{padding:"5px"}}> </i>
       </div>
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
     </div>
   )
