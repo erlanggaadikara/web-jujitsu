@@ -1,13 +1,16 @@
-import React, { useLayoutEffect } from "react";
-import { observer } from "mobx-react-lite";
+import React, { useLayoutEffect, useEffect } from "react";
+import { observer, useObservable } from "mobx-react-lite";
 import MenuBar from "./MenuBar";
 import Beranda from "./Beranda";
 import TentangKami from "./TentangKami";
 import Kepengurusan from "./Kepengurusan";
 import Kontak from "./Kontak";
+import "./style.css";
 import VisitorTracker from "../../Utils/VisitorTracker";
+import { findAllByTestId } from "@testing-library/react";
 
 export default observer(() => {
+  const [visible, setVisible] = React.useState(false);
   const menuHandle = () => {
     let scrollY = window.scrollY;
     let menuEl = document.getElementById("menu-bar");
@@ -22,8 +25,17 @@ export default observer(() => {
 
   const handleScroll = () => {
     menuHandle();
-    // handleActiveSection();
   };
+
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.pageYOffset !== 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+  }, []);
 
   useLayoutEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -33,18 +45,11 @@ export default observer(() => {
   //Tracking Visitor (proses)
   //VisitorTracker("/");
 
-  const style = {
-    page: {
-      display: "flex",
-      flexDirection: "column",
-      marginTop: 30,
-    },
-  };
-
   return (
     <>
+      {/* {visible ? <MenuBar /> : null} */}
       <MenuBar />
-      <div id="beranda" style={style.page}>
+      <div id="beranda" className="page">
         <Beranda />
         <TentangKami />
         <Kepengurusan />
