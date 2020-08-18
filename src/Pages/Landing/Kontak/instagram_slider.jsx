@@ -42,12 +42,11 @@ export default class slideshow extends React.Component {
   render() {
     const { currentIndex, galleryItems, responsive } = this.state;
       return (
-      <div style={{display:"flex",width:"480px",justifyContent:"center"}}>
+      <div style={{display:"flex",width:"100%",justifyContent:"center"}}>
         <AliceCarousel
           items={galleryItems}
-          autoPlay={true}
-          autoPlayInterval={3000}
-          fadeOutAnimation={true}
+          autoPlay={false}
+          fadeOutAnimation={false}
           dotsDisabled={false}
           buttonsDisabled={true}
           mouseTrackingEnabled={false}
