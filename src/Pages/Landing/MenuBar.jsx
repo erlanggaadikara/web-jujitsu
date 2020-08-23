@@ -11,6 +11,7 @@ import {
 import Logo from "./logo.png";
 import { useMediaQuery } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import { navigate, Link } from "@reach/router";
 
 export default observer(() => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -76,6 +77,9 @@ export default observer(() => {
               <Button href={"#beranda"}>Beranda</Button>
               <Button href={"#tentang-kami"}>Tentang Kami</Button>
               <Button href={"#kepengurusan"}>Kepengurusan</Button>
+              <Button>
+                <Link to="/Sejarah">Sejarah</Link>{" "}
+              </Button>
               <Button href={"#kontak"}>Kontak</Button>
             </>
           )}

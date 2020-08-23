@@ -5,9 +5,11 @@ import Beranda from "./Beranda";
 import TentangKami from "./TentangKami";
 import Kepengurusan from "./Kepengurusan";
 import Kontak from "./Kontak";
+import Sejarah from "../AdditionalPage/Sejarah";
 import "./style.css";
 import VisitorTracker from "../../Utils/VisitorTracker";
 import { findAllByTestId } from "@testing-library/react";
+import { Router } from "@reach/router";
 
 export default observer(() => {
   const [visible, setVisible] = React.useState(false);
@@ -47,7 +49,6 @@ export default observer(() => {
 
   return (
     <>
-      {/* {visible ? <MenuBar /> : null} */}
       <MenuBar />
       <div id="beranda" className="page">
         <Beranda />
