@@ -54,7 +54,11 @@ export default observer(() => {
       <AppBar style={style.appBar}>
         <Button style={style.icon} href={"#beranda"}>
           <Typography style={style.icon.text} variant="h6">
-            <img src={Logo} style={{ width: 51, height: 51 }} />
+            <img
+              src={Logo}
+              style={{ width: 51, height: 51 }}
+              alt="logoLanding"
+            />
           </Typography>
         </Button>
         <div style={style.menu}>
