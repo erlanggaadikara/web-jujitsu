@@ -2,10 +2,14 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import "./w3.css";
 import Instagram from './instagram_feed.js';
+import ContactPerson from './ContactPerson'
 
 export default observer(() => {
   return (
     <div id="kontak">
+      <div class="w3-white">
+        <ContactPerson />
+      </div>
       <div class="w3-white w3-center w3-padding-64">
         <Instagram />
       </div>
