@@ -5,7 +5,7 @@ import Img1 from './img/akbar.jpeg';
 export default function pelatih(){
     return(
         <div>
-            <div class="w3-padding-64 w3-grey">
+            <div class="w3-padding-64 w3-light-grey">
             <div class="w3-row-padding">
                 <div class="w3-col l4 m6">
                 <img class="w3-image w3-round-large w3-hide-small" src={Img1} alt="App" width="335" height="471"/>

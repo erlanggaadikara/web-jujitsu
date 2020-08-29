@@ -1,15 +1,15 @@
 import React from "react";
 import "./w3.css";
 import {
-  Akbar,
-  Nashir,
-  Nishfi,
-  Adelya,
-  Alifio,
-  Bisma,
-  Niko,
-  Addie,
-  Jeje,
+  Ketua,
+  WakilKetua,
+  Bendahara2,
+  DivAtlet,
+  DivHumas,
+  Bendahara1,
+  Sekretaris1,
+  Sekretaris2,
+  DivPerlengkapan,
 } from "./Profil";
 
 export default function pengurus() {
@@ -31,8 +31,8 @@ export default function pengurus() {
           justifyContent: "center",
         }}
       >
-        <Akbar />
-        <Nashir />
+        <Ketua />
+        <WakilKetua />
       </div>
 
       <div
@@ -43,8 +43,8 @@ export default function pengurus() {
           justifyContent: "center",
         }}
       >
-        <Niko />
-        <Addie />
+        <Sekretaris1 />
+        <Sekretaris2 />
       </div>
 
       <div
@@ -55,8 +55,8 @@ export default function pengurus() {
           justifyContent: "center",
         }}
       >
-        <Bisma />
-        <Nishfi />
+        <Bendahara1 />
+        <Bendahara2 />
       </div>
 
       <div
@@ -67,9 +67,9 @@ export default function pengurus() {
           justifyContent: "center",
         }}
       >
-        <Adelya />
-        <Alifio />
-        <Jeje />
+        <DivAtlet />
+        <DivHumas />
+        <DivPerlengkapan />
       </div>
     </div>
   );

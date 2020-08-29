@@ -1,5 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
+import Embed from 'react-embed';
 import "./w3.css";
 import Img2 from "./img/img2.jpeg";
 
@@ -18,7 +19,7 @@ export default observer(() => {
             <div class="w3-col l4 m6">
               <img src={Img2} class="w3-image w3-right w3-hide-small" width="335" height="471"/>
               <div class="w3-center w3-hide-large w3-hide-medium">
-                <img src={Img2} class="w3-image w3-margin-top" width="446" height="582"/>
+                <Embed url="https://www.youtube.com/watch?v=V5bDevUWXFA" style={{width:"100%"}}/>
               </div>
             </div>
           </div>
