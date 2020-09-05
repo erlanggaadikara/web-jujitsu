@@ -11,6 +11,9 @@
 #android
 /android
 
+#.vscode
+.vscode
+
 # production
 /build
 
