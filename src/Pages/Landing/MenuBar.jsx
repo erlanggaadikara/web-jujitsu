@@ -9,12 +9,14 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import Logo from "./logo.png";
-import { useMediaQuery } from "@material-ui/core";
+import "./w3.css";
+import { useMediaQuery, Modal, TextField, makeStyles, Paper } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { navigate, Link } from "@reach/router";
 
 export default observer(() => {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [modal, setModal] = React.useState(false)
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -44,6 +46,19 @@ export default observer(() => {
     a: {
       textDecoration: "none",
     },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      top: "30%",
+      left: "37%",
+      height: 400,
+      width: 400,
+    },
+    paper: {
+      justifyContent: 'center',
+      flexDirection: 'row',
+      padding: 100
+    }
   };
 
   // const isDesktop = useMediaQuery("(min-width:1224px)");
@@ -81,6 +96,7 @@ export default observer(() => {
                 <Link to="/Sejarah">Sejarah</Link>{" "}
               </Button>
               <Button href={"#kontak"}>Kontak</Button>
+              <Button onClick={() => setModal(true)}>Login</Button>
             </>
           )}
         </div>
@@ -112,7 +128,26 @@ export default observer(() => {
             Kontak
           </a>
         </MenuItem>
+        <MenuItem onClick={() => setModal(true)}>
+          <a style={style.a}>
+            Login
+          </a>
+        </MenuItem>
       </Menu>
+      <Modal 
+        open={modal}
+        style={style.modal}
+        onClose={() => setModal(false)}
+      >
+        <Paper style={style.paper} variant="outlined">
+          <h2 id="simple-modal-title">Login</h2>
+          <form noValidate autoComplete="off" >
+            <TextField id="username" label="Username" variant="outlined"/>
+            <TextField id="password" style={{marginTop: 10}} label="Password" variant="outlined" />
+          </form>
+          <Button style={{marginTop: 10}} variant="contained" color="primary">Confirm</Button>
+        </Paper>
+      </Modal>
     </>
   );
 });
