@@ -10,13 +10,19 @@ import {
 } from "@material-ui/core";
 import Logo from "./logo.png";
 import "./w3.css";
-import { useMediaQuery, Modal, TextField, makeStyles, Paper } from "@material-ui/core";
+import {
+  useMediaQuery,
+  Modal,
+  TextField,
+  makeStyles,
+  Paper,
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { navigate, Link } from "@reach/router";
 
 export default observer(() => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [modal, setModal] = React.useState(false)
+  const [modal, setModal] = React.useState(false);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -47,18 +53,18 @@ export default observer(() => {
       textDecoration: "none",
     },
     modal: {
-      display: 'flex',
-      alignItems: 'center',
+      display: "flex",
+      alignItems: "center",
       top: "30%",
       left: "37%",
       height: 400,
       width: 400,
     },
     paper: {
-      justifyContent: 'center',
-      flexDirection: 'row',
-      padding: 100
-    }
+      justifyContent: "center",
+      flexDirection: "row",
+      padding: 100,
+    },
   };
 
   // const isDesktop = useMediaQuery("(min-width:1224px)");
@@ -92,9 +98,9 @@ export default observer(() => {
               <Button href={"#beranda"}>Beranda</Button>
               <Button href={"#tentang-kami"}>Tentang Kami</Button>
               <Button href={"#kepengurusan"}>Kepengurusan</Button>
-              <Button>
+              {/* <Button>
                 <Link to="/Sejarah">Sejarah</Link>{" "}
-              </Button>
+              </Button> */}
               <Button href={"#kontak"}>Kontak</Button>
               <Button onClick={() => setModal(true)}>Login</Button>
             </>
@@ -129,23 +135,24 @@ export default observer(() => {
           </a>
         </MenuItem>
         <MenuItem onClick={() => setModal(true)}>
-          <a style={style.a}>
-            Login
-          </a>
+          <a style={style.a}>Login</a>
         </MenuItem>
       </Menu>
-      <Modal 
-        open={modal}
-        style={style.modal}
-        onClose={() => setModal(false)}
-      >
+      <Modal open={modal} style={style.modal} onClose={() => setModal(false)}>
         <Paper style={style.paper} variant="outlined">
           <h2 id="simple-modal-title">Login</h2>
-          <form noValidate autoComplete="off" >
-            <TextField id="username" label="Username" variant="outlined"/>
-            <TextField id="password" style={{marginTop: 10}} label="Password" variant="outlined" />
+          <form noValidate autoComplete="off">
+            <TextField id="username" label="Username" variant="outlined" />
+            <TextField
+              id="password"
+              style={{ marginTop: 10 }}
+              label="Password"
+              variant="outlined"
+            />
           </form>
-          <Button style={{marginTop: 10}} variant="contained" color="primary">Confirm</Button>
+          <Button style={{ marginTop: 10 }} variant="contained" color="primary">
+            Confirm
+          </Button>
         </Paper>
       </Modal>
     </>
