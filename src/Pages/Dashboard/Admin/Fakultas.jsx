@@ -65,7 +65,6 @@ export const CreateFakultas = () => {
 export const FormFakultas = (props) => {
   const { id } = props;
   let items = props.location.state.data;
-  console.log(item);
 
   const [item, setItem] = React.useState(items);
 
