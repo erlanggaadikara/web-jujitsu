@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Landing from "./Pages/Landing";
-import { Router } from "@reach/router";
-import Sejarah from "./Pages/AdditionalPage/Sejarah";
+import RouteMap from "./RouteMap";
+import Sidebar from "./Pages/Dashboard/Admin/Sidebar";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Landing path="/" />
-        <Sejarah path="/Sejarah" />
-      </Router>
+      <RouteMap />
     </div>
   );
 }

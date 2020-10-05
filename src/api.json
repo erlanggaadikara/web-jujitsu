@@ -1,0 +1,11 @@
+{
+  "View": {
+    "CSRF": "https://backend.jujitsu-upnvjatim.xyz/api/check_csrf/honeybadger",
+    "Fakultas": "https://backend.jujitsu-upnvjatim.xyz/api/fakultas/",
+    "Jurusan": "https://backend.jujitsu-upnvjatim.xyz/api/jurusan"
+  },
+  "Insert": {
+    "Fakultas": "https://backend.jujitsu-upnvjatim.xyz/api/fakultas/insert",
+    "Jurusan": "https://backend.jujitsu-upnvjatim.xyz/api/jurusan/insert"
+  }
+}
