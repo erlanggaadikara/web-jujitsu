@@ -1,0 +1,3 @@
+[submodule "src/honeylib"]
+	path = src/honeylib
+	url = https://gitlab.com/erlanggapratama/honeylib.git
