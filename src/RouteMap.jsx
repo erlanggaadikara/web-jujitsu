@@ -14,7 +14,7 @@ import Jurusan, {
 
 export default () => {
   return (
-    <Router primary={false}>
+    <Router primary>
       <Landing path="/" />
       <Sejarah path="/Sejarah" />
       <Admin path="/Pages/Dashboard/Admin/">

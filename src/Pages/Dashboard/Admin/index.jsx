@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import Sidebar from "./Sidebar";
 import { useMediaQuery } from "@material-ui/core";
+import { useAsyncEffect } from "use-async-effect";
 import Logo from "../../Landing/logo.png";
+import { viewData } from "../../../Api/backend";
+
+const initialData = {
+  fakultas: [],
+  jurusan: [],
+};
+
+export const DataContext = createContext(initialData);
 
 export default ({ children }) => {
+  const [data, setData] = useState(initialData);
+
+  useAsyncEffect(async () => {
+    let jurusan = await viewData(
+      "https://backend.jujitsu-upnvjatim.xyz/api/jurusan"
+    );
+
+    if (!jurusan) {
+      console.log(jurusan);
+    }
+
+    let fakultas = await viewData(
+      "https://backend.jujitsu-upnvjatim.xyz/api/fakultas"
+    );
+
+    if (!fakultas) {
+      console.log(fakultas);
+    }
+    setData({ fakultas, jurusan });
+  }, []);
   return (
     <div
       style={{ display: "flex", flexDirection: "row", flex: 1, height: "100%" }}
@@ -13,7 +42,7 @@ export default ({ children }) => {
           paddingLeft: 20,
           backgroundColor: "#e6e6e6",
           paddingBottom: "50%",
-          width: "20%",
+          minWidth: "20%",
         }}
       >
         <div>
@@ -30,7 +59,9 @@ export default ({ children }) => {
         <Sidebar />
       </div>
 
-      <div style={{ width: "100%" }}>{children}</div>
+      <div style={{ width: "100%" }}>
+        <DataContext.Provider value={data}>{children}</DataContext.Provider>
+      </div>
     </div>
   );
 };

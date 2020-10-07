@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useAsyncEffect } from "use-async-effect";
+import React, { useState, useEffect, useContext } from "react";
 import {
   Container,
   Form,
@@ -7,42 +6,23 @@ import {
   TableColumn,
   Field,
 } from "../../../honeylib/Component";
-import { viewData } from "../../../Api/backend";
+import { DataContext } from "./index";
 
 const json = require("../../../api.json");
 
 const route = "Pages/Dashboard/Admin/Jurusan";
 
 export default () => {
-  const [data, setData] = useState([]);
-  const [dataFakultas, setDataFakultas] = useState([]);
-
-  useAsyncEffect(async () => {
-    let result = await viewData(
-      "https://backend.jujitsu-upnvjatim.xyz/api/jurusan"
-    );
-
-    if (result) {
-      setData(result);
-    }
-
-    let result_fakultas = await viewData(
-      "https://backend.jujitsu-upnvjatim.xyz/api/fakultas"
-    );
-
-    if (result_fakultas) {
-      setDataFakultas(result_fakultas);
-    }
-  }, []);
+  const data = useContext(DataContext);
 
   return (
     <Container>
-      <Table data={data} title={"Jurusan"} route={route}>
+      <Table data={data.jurusan} title={"Jurusan"} route={route}>
         <TableColumn title={"Jurusan"} path={"jurusan_nama"} />
         <TableColumn
           title={"Fakultas"}
           path={"fakultas_id"}
-          foreign={dataFakultas}
+          foreign={data.fakultas}
         />
         <TableColumn
           title={"Status"}
@@ -55,21 +35,11 @@ export default () => {
 };
 
 export const CreateJurusan = () => {
-  const [dataFakultas, setDataFakultas] = useState([]);
-  const [item, setItem] = React.useState({
+  const data = useContext(DataContext);
+  const [item, setItem] = useState({
     nama_jurusan: "",
     fakultas_id: 0,
   });
-
-  useAsyncEffect(async () => {
-    let result_fakultas = await viewData(
-      "https://backend.jujitsu-upnvjatim.xyz/api/fakultas"
-    );
-
-    if (result_fakultas) {
-      setDataFakultas(result_fakultas);
-    }
-  }, []);
 
   const handle = (event) => {
     const { name, value } = event.target;
@@ -80,7 +50,7 @@ export const CreateJurusan = () => {
     url: "https://backend.jujitsu-upnvjatim.xyz/api/jurusan/insert",
     body: item,
   };
-  console.log(item.nama_jurusan, item.fakultas_id);
+
   return (
     <Form formTitle={"Jurusan"} api={api} removeDelete={true} route={route}>
       <Field
@@ -97,28 +67,19 @@ export const CreateJurusan = () => {
         value={item.fakultas_id}
         onChange={handle}
         selector={"multiple"}
-        foreign={dataFakultas}
+        foreign={data.fakultas}
       />
     </Form>
   );
 };
 
 export const FormJurusan = (props) => {
+  const data = useContext(DataContext);
+
   const { id } = props;
   let items = props.location.state.data;
 
-  const [item, setItem] = React.useState(items);
-  const [dataFakultas, setDataFakultas] = useState([]);
-
-  useAsyncEffect(async () => {
-    let result_fakultas = await viewData(
-      "https://backend.jujitsu-upnvjatim.xyz/api/fakultas"
-    );
-
-    if (result_fakultas) {
-      setDataFakultas(result_fakultas);
-    }
-  }, []);
+  const [item, setItem] = useState(items);
 
   const handle = (event) => {
     const { name, value } = event.target;
@@ -141,7 +102,7 @@ export const FormJurusan = (props) => {
         value={item.fakultas_id}
         onChange={handle}
         selector={"multiple"}
-        foreign={dataFakultas}
+        foreign={data.fakultas}
       />
       <Field
         title={"Status"}

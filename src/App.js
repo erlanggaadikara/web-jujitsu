@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
+// eslint-disable-next-line
+import React from "react";
 import RouteMap from "./RouteMap";
-import Sidebar from "./Pages/Dashboard/Admin/Sidebar";
 
 function App() {
   return (

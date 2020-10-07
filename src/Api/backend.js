@@ -33,8 +33,9 @@ const viewData = async (url) => {
   }
 };
 
-const insertData = (api, token) => {
-  let result = axios({
+const insertData = async (api) => {
+  let token = await getCSRFToken();
+  let result = await axios({
     method: "POST",
     url: api.url,
     headers: {
@@ -47,8 +48,9 @@ const insertData = (api, token) => {
   return result;
 };
 
-const deleteData = (api, token) => {
-  let result = axios({
+const deleteData = async (api) => {
+  let token = await getCSRFToken();
+  let result = await axios({
     method: "POST",
     url: api.url,
     headers: {

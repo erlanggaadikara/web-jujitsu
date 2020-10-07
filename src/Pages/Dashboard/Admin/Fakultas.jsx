@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useAsyncEffect } from "use-async-effect";
+import React, { useState, useContext } from "react";
 import {
   Container,
   Form,
@@ -8,31 +6,17 @@ import {
   TableColumn,
   Field,
 } from "../../../honeylib/Component";
-import { viewData } from "../../../Api/backend";
+import { DataContext } from "./index";
 
 const json = require("../../../api.json");
 
 const route = "Pages/Dashboard/Admin/Fakultas";
 
 export default () => {
-  const [data, setData] = useState([]);
-  let result;
-
-  useAsyncEffect(async () => {
-    result = await viewData(
-      "https://backend.jujitsu-upnvjatim.xyz/api/fakultas"
-    );
-
-    if (result) {
-      setData(result);
-    } else {
-      console.log(result);
-    }
-  }, [result]);
-
+  const data = useContext(DataContext);
   return (
     <Container>
-      <Table data={data} title={"Fakultas"} route={route}>
+      <Table data={data.fakultas} title={"Fakultas"} route={route}>
         <TableColumn title={"Fakultas"} path={"fakultas_nama"} />
         <TableColumn
           title={"Status"}
@@ -45,7 +29,7 @@ export default () => {
 };
 
 export const CreateFakultas = () => {
-  const [item, setItem] = React.useState("");
+  const [item, setItem] = useState("");
 
   const handle = (event) => {
     setItem(event.target.value);
@@ -63,10 +47,9 @@ export const CreateFakultas = () => {
 };
 
 export const FormFakultas = (props) => {
-  const { id } = props;
   let items = props.location.state.data;
 
-  const [item, setItem] = React.useState(items);
+  const [item, setItem] = useState(items);
 
   const handle = (event) => {
     const { name, value } = event.target;
