@@ -17,6 +17,7 @@
 # production
 /build
 /web-jujitsu-release
+/jujitsu-upnvjatim
 
 # misc
 .DS_Store
