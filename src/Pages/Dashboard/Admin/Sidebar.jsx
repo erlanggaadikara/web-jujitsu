@@ -2,17 +2,21 @@ import React from "react";
 import { Router, Link } from "@reach/router";
 import { Container, RowContainer, Text } from "../../../honeylib/Component";
 
-export default () => {
+export default (props) => {
+  const { handleSwipe } = props;
+
   return (
-    <>
-      <div>
-        {SidebarItems.map((item) => (
-          <Link style={{ textDecoration: "none" }} to={item.route}>
-            <Text size="large">{item.name}</Text>
-          </Link>
-        ))}
-      </div>
-    </>
+    <div>
+      {SidebarItems.map((item) => (
+        <Link
+          style={{ textDecoration: "none" }}
+          to={item.route}
+          onClick={handleSwipe}
+        >
+          <Text size="large">{item.name}</Text>
+        </Link>
+      ))}
+    </div>
   );
 };
 
