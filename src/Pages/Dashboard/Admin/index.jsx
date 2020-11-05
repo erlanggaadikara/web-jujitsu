@@ -13,6 +13,7 @@ import { viewData } from "../../../Api/backend";
 const initialData = {
   fakultas: [],
   jurusan: [],
+  member: [],
 };
 
 export const DataContext = createContext(initialData);
@@ -42,19 +43,22 @@ export default ({ children, window }) => {
     let jurusan = await viewData(
       "https://backend.jujitsu-upnvjatim.xyz/api/jurusan"
     );
-
-    if (!jurusan) {
-      console.log(jurusan);
-    }
+    if (!jurusan) console.log(jurusan);
 
     let fakultas = await viewData(
       "https://backend.jujitsu-upnvjatim.xyz/api/fakultas"
     );
+    if (!fakultas) console.log(fakultas);
 
-    if (!fakultas) {
-      console.log(fakultas);
+    let member = await viewData(
+      "https://backend.jujitsu-upnvjatim.xyz/api/member"
+    );
+    if (!member) {
+      member = null;
+      console.log(member);
     }
-    setData({ fakultas, jurusan });
+
+    setData({ fakultas, jurusan, member });
   }, []);
 
   return (
@@ -124,10 +128,7 @@ export default ({ children, window }) => {
           </Drawer>
         </Hidden>
       </div>
-      <div
-        className={classes.content}
-        style={{ position: "relative", width: "100%" }}
-      >
+      <div className={classes.content} style={{ width: "100%" }}>
         <DataContext.Provider value={data}>{children}</DataContext.Provider>
       </div>
     </div>
@@ -149,6 +150,6 @@ const useStyles = makeStyles((theme) => ({
 
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(1),
   },
 }));

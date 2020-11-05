@@ -6,7 +6,7 @@ export default (props) => {
   const { handleSwipe } = props;
 
   return (
-    <div>
+    <div style={{ margin: "20px 0 0 10px" }}>
       {SidebarItems.map((item) => (
         <Link
           style={{ textDecoration: "none" }}
@@ -21,6 +21,10 @@ export default (props) => {
 };
 
 const SidebarItems = [
+  {
+    name: "Member",
+    route: "/Pages/Dashboard/Admin/User/Member/Table/",
+  },
   {
     name: "Fakultas",
     route: "/Pages/Dashboard/Admin/Fakultas/Table/",
