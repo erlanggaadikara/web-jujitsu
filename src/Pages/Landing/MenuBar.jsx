@@ -52,6 +52,7 @@ export default observer(() => {
     a: {
       textDecoration: "none",
     },
+
     modal: {
       display: "flex",
       alignItems: "center",

@@ -7,3 +7,50 @@ html {
   display: flex;
   flex-direction: column;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .modal-login{
+    display: flex;
+    align-items: center;
+    top: 30%;
+    left: 15%;
+    height: 200;
+    width: 200;
+  }
+ }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .modal-login{
+    display: flex;
+    align-items: center;
+    top: 30%;
+    left: 15%;
+    height: 200;
+    width: 200;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .modal-login{
+    display: flex;
+    align-items: center;
+    top: 30%;
+    left: 15%;
+    height: 200;
+    width: 200;
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .modal-login{
+    display: flex;
+    align-items: center;
+    top: 30%;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+  }
+}
